@@ -49,6 +49,7 @@
         <framework src="platforms/android/xwalk.gradle" custom="true" type="gradleReference"/>
 
         <hook type="after_plugin_install" src="hooks/after_plugin_install/000-shared_mode_special.js"/>
+        <hook type="before_build" src="hooks/before_build/000-shared_copy_xml.js"/>
         <hook type="before_plugin_uninstall" src="hooks/before_plugin_uninstall/000-shared_mode_special.js"/>
     </platform>
 </plugin>
