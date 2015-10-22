@@ -17,7 +17,7 @@
         <engine name="cordova-plugman" version=">=4.2.0"/><!-- needed for gradleReference support -->
     </engines>
     
-    <preference name="xwalkDownloadURL">
+    <preference name="xwalkDownloadURL"/>
 
     <!-- android -->
     <platform name="android">
