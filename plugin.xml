@@ -16,6 +16,8 @@
         <engine name="cordova-android" version=">=4"/>
         <engine name="cordova-plugman" version=">=4.2.0"/><!-- needed for gradleReference support -->
     </engines>
+    
+    <preference name="xwalkDownloadURL">
 
     <!-- android -->
     <platform name="android">
@@ -25,6 +27,11 @@
             <preference name="xwalkCommandLine" default="--disable-pull-to-refresh-effect"/>
             <preference name="xwalkMode" default="embedded" />
             <preference name="xwalkMultipleApk" default="true" />
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+                <meta-data android:name="xwalk_apk_url"
+                       android:value="$xwalkDownloadURL" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">
