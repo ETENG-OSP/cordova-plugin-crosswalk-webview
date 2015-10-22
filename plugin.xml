@@ -17,7 +17,7 @@
         <engine name="cordova-plugman" version=">=4.2.0"/><!-- needed for gradleReference support -->
     </engines>
     
-    <preference name="xwalkDownloadURL"/>
+    <preference name="xwalkApkUrl"/>
 
     <!-- android -->
     <platform name="android">
@@ -31,7 +31,7 @@
         
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
                 <meta-data android:name="xwalk_apk_url"
-                       android:value="$xwalkDownloadURL" />
+                       android:value="$xwalkApkUrl" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">
