@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources xmlns:android="http://schemas.android.com/apk/res/android">
+  <string name="crosswalk_install_title">"插件安装"</string>
+  <string name="download_progress_message">"正在从一个远程地址下载插件..."</string>
+  <string name="download_failed_message">"下载失败，发生了一个网络错误。"</string>
+  <string name="download_failed_device_not_found">"下载失败，存储设备未找到。"</string>
+  <string name="download_failed_insufficient_space">"下载失败，存储空间不足。"</string>
+  <string name="download_failed_time_out">"下载失败，网络连接超时。"</string>
+  <string name="market_open_failed_message">"未找到下载地址，你需要重新连接下载插件。"</string>
+  <string name="startup_not_found_title">"插件未找到"</string>
+  <string name="startup_not_found_message">"APP_NAME需要插件来运行。请安装插件，并重启APP_NAME。"</string>
+  <string name="startup_architecture_mismatch_title">"插件与CPU架构不匹配"</string>
+  <string name="startup_architecture_mismatch_message">"插件必须更新来匹配设备的CPU架构。请更新插件，并重启APP_NAME。"</string>
+  <string name="startup_signature_check_error_title">"插件验证失败"</string>
+  <string name="startup_signature_check_error_message">"插件不能被验证。请卸载插件，并重启APP_NAME。"</string>
+  <string name="startup_older_version_title">"需要新版本的插件"</string>
+  <string name="startup_older_version_message">"当前版本插件需要更新。请重新安装插件，并重启APP_NAME。"</string>
+  <string name="startup_newer_version_title">"不匹配的插件"</string>
+  <string name="startup_newer_version_message">"APP_NAME与当前插件版本不匹配。"</string>
+  <string name="xwalk_get_crosswalk">"获取插件"</string>
+  <string name="xwalk_cancel">"取消"</string>
+  <string name="xwalk_continue">"继续"</string>
+  <string name="xwalk_close">"关闭"</string>
+  <string name="xwalk_retry">"重试"</string>
+</resources>
