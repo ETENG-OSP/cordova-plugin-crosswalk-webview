@@ -22,6 +22,7 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
+            <preference name="loadUrlTimeoutValue" value="1200000" />
             <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine"/>
             <preference name="xwalkVersion" default="14+"/>
             <preference name="xwalkCommandLine" default="--disable-pull-to-refresh-effect"/>
