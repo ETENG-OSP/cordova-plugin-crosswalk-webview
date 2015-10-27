@@ -17,12 +17,6 @@ module.exports = function(context) {
   if (!fs.existsSync(zhTaget)){
     fs.mkdirSync(zhTaget);
   }
-  
-  var copyTarget = path.join(zhTaget,'xwalk_app_strings.xml');
-  
-  if (!fs.existsSync(copyTarget)){
-    fs.mkdirSync(copyTarget);
-  }
       
   /** Init */
   var projectResXml = XmlHelpers.parseElementtreeSync(pluginCopyFile);
