@@ -11,12 +11,21 @@ module.exports = function(context) {
   var pluginCopyFile = path.join(context.opts.plugin.dir, 'res','xwalk_app_strings.xml'), 
       androidPlatformDir = path.join(context.opts.projectRoot,
             'platforms', 'android'),
-      copyTarget = androidPlatformDir+'/res/values-zh-rCN/xwalk_app_strings.xml';
+      resTarget = path.join(androidPlatformDir,'res'),
+      zhTaget = path.join(resTarget,'values-zh-rCN');
       
-  /** Init */
-  var projectResXml = XmlHelpers.parseElementtreeSync(pluginCopyFile);
+  if (!fs.existsSync(zhTaget)){
+    fs.mkdirSync(zhTaget);
+  }
+  
+  var copyTarget = path.join(zhTaget,'xwalk_app_strings.xml';
+  
   if (!fs.existsSync(copyTarget)){
     fs.mkdirSync(copyTarget);
   }
+      
+  /** Init */
+  var projectResXml = XmlHelpers.parseElementtreeSync(pluginCopyFile);
+  
   fs.writeFileSync(copyTarget, projectResXml.write({indent: 4}), 'utf-8');
 };
