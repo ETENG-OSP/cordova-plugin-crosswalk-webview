@@ -18,7 +18,7 @@ module.exports = function(context) {
     fs.mkdirSync(zhTaget);
   }
   
-  var copyTarget = path.join(zhTaget,'xwalk_app_strings.xml';
+  var copyTarget = path.join(zhTaget,'xwalk_app_strings.xml');
   
   if (!fs.existsSync(copyTarget)){
     fs.mkdirSync(copyTarget);
