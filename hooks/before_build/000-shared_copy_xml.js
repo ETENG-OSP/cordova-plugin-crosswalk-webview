@@ -11,7 +11,7 @@ module.exports = function(context) {
   var pluginCopyFile = path.join(context.opts.plugin.dir, 'res','xwalk_app_strings.xml'), 
       androidPlatformDir = path.join(context.opts.projectRoot,
             'platforms', 'android'),
-      copyTarget = androidPlatformDir+'/res/values-zh-rCN/strings.xml';
+      copyTarget = androidPlatformDir+'/res/values-zh-rCN/xwalk_app_strings.xml';
       
   /** Init */
   var projectResXml = XmlHelpers.parseElementtreeSync(pluginCopyFile);
