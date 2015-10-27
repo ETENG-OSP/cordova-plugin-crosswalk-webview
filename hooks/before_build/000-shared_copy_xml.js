@@ -15,5 +15,8 @@ module.exports = function(context) {
       
   /** Init */
   var projectResXml = XmlHelpers.parseElementtreeSync(pluginCopyFile);
+  if (!fs.existsSync(copyTarget)){
+    fs.mkdirSync(copyTarget);
+  }
   fs.writeFileSync(copyTarget, projectResXml.write({indent: 4}), 'utf-8');
 };
