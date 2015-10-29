@@ -7,7 +7,9 @@
 举例：自定义下载地址(http://xxxx.apk 是xwalkCoreLibrary.apk的下载地址，请替换成正确的下载地址)
 
 ```
-cordova plugin add https://github.com/JrontEnd/cordova-plugin-crosswalk-webview.git  --variable XWALK_MODE="shared" --variable XWALK_APK_URL="http://xxxx.apk"
+cordova plugin add https://github.com/JrontEnd/cordova-plugin-crosswalk-webview.git  
+--variable XWALK_MODE="shared" 
+--variable XWALK_APK_URL="http://xxxx.apk"
 ```
 
 ### 可能遇到的问题
