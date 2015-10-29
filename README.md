@@ -1,5 +1,43 @@
 # cordova-plugin-crosswalk-webview
 
+本插件修改自[crosswalk官方插件](https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview)，新增了在共享模式下，新增对于中文的支持，以及自定义下载地址的功能。（本插件只支持共享模式，其他模式请使用官方插件）
+
+### 自定义下载地址
+
+举例：自定义下载地址(http://xxxx.apk是xwalkCoreLibrary.apk的下载地址，请替换成正确的下载地址)
+
+```
+cordova plugin add https://github.com/JrontEnd/cordova-plugin-crosswalk-webview.git  --variable XWALK_MODE="shared" --variable XWALK_APK_URL="http://xxxx.apk"
+```
+
+### 可能遇到的问题
+
+在运行命令 cordova build android --release 时，命令行会报错：
+
+解决方法如下：
+
+在build.gradle中，在下列代码中，
+
+```
+android{
+
+}
+```
+
+加入
+
+```
+lintOptions {
+    abortOnError false
+}
+```
+
+即可解决错误。
+
+以下是官方文档：
+
+***
+
 Makes your Cordova application use the [Crosswalk WebView](https://crosswalk-project.org/)
 instead of the System WebView. Requires cordova-android 4.0 or greater.
 
