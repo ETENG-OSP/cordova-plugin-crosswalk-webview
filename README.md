@@ -2,6 +2,14 @@
 
 本插件修改自[crosswalk官方插件](https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview)，新增了在共享模式下，新增对于中文的支持，以及自定义下载地址的功能。（本插件只支持共享模式，其他模式请使用官方插件）
 
+### 共享模式
+
+共享模式，指的是将crosswalk应用的主要内容，以apk的形式安装到手机中。并且，作为一个浏览器服务，为所有使用crosswalk共享模式的应用提供服务。好处有以下几点：
+
+* 可以很大程度上减少用户下载应用所耗费的流量，所耗费的时间
+* 一次安装，多应用使用
+* 有效的解决应用的兼容性问题
+
 ### 自定义下载地址
 
 举例：自定义下载地址(http://xxxx.apk 是xwalkCoreLibrary.apk的下载地址，请替换成正确的下载地址)
