@@ -1,6 +1,6 @@
 # cordova-plugin-crosswalk-webview
 
-本插件修改自[crosswalk官方插件](https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview)，新增了在共享模式下，新增对于中文的支持，以及自定义下载地址的功能。（本插件只支持共享模式，其他模式请使用官方插件）
+本插件修改自[crosswalk官方插件](https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview)，新增了在共享模式下，对于中文的支持，以及自定义下载地址的功能。（本插件只支持共享模式，其他模式请使用官方插件）
 
 ### 共享模式
 
