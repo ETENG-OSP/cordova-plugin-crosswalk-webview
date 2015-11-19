@@ -3,8 +3,8 @@ module.exports = function(context) {
   /** @external */
   var fs = context.requireCordovaModule('fs'),
       path = context.requireCordovaModule('path'),
-      ConfigParser =require('cordova-common').configParser,
-      XmlHelpers = require('cordova-common').xmlHelpers,
+      ConfigParser = context.requireCordovaModule("cordova-common/src/configparser/ConfigParser"),
+      XmlHelpers = context.requireCordovaModule("cordova-common/src/util/xml-helpers"),
       et = context.requireCordovaModule('elementtree');
        
   /** @defaults */   
