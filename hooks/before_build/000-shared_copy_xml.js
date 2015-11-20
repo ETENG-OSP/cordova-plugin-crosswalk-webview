@@ -4,8 +4,8 @@ module.exports = function(context) {
   var fs = context.requireCordovaModule('fs'),
       path = context.requireCordovaModule('path'),
        // cordova-lib >= 5.3.4 doesn't contain ConfigParser and xml-helpers anymore
-        ConfigParser = context.requireCordovaModule("cordova-common").ConfigParser;
-        XmlHelpers = context.requireCordovaModule("cordova-common").xmlHelpers;
+      ConfigParser = context.requireCordovaModule("cordova-common").ConfigParser;
+      XmlHelpers = context.requireCordovaModule("cordova-common").xmlHelpers;
       et = context.requireCordovaModule('elementtree');
        
   /** @defaults */   
