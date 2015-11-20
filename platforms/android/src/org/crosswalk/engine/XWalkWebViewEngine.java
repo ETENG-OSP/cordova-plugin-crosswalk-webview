@@ -227,4 +227,8 @@ public class XWalkWebViewEngine implements CordovaWebViewEngine {
         }
         webView.load(url, null);
     }
+    
+    public boolean isXWalkReady() {
+        return activityDelegate.isXWalkReady();
+    }
 }
